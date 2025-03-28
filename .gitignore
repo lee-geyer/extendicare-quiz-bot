@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# IMPORTANT: Exclude ALL policy and procedure documents
+# Raw documents
+data/raw/*
+# Processed documents
+data/processed/*
+# Document caches
+.document_cache/
+# Any Word, PDF, PPT files anywhere in the project
+**/*.docx
+**/*.doc
+**/*.pdf
+**/*.pptx
+**/*.ppt
+# Exclude all markdown files in data directories (as they contain converted policies)
+data/**/*.md
+# Any files with "policy" or "procedure" in their names
+**/*policy*.*
+**/*procedure*.*
+
+# Only include empty .gitkeep files in data directories
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Credentials
+.env
+.env.*
+!.env.example
+credentials.json
+*_key.*
+*_secret.*
